@@ -13,7 +13,6 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://DIVD.club">
   <meta property="og:description" content="DIVD.club">
-  <link rel="stylesheet" href="#">
 
   <style>
 	body {
@@ -25,14 +24,169 @@
 	.img-container-inline {
 	  text-align: center;
 	  display: block;
-	  
 	}
+
+    .text-block {
+        padding-left: 25%;
+        padding-right: 25%;
+        text-align: center;
+        display: block;
+    }
+	
+	@import url(fonts/font-awesome.min.css);
+	/* raleway-regular - latin */
+	@font-face {
+	  font-family: 'Raleway';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url('fonts/raleway-v22-latin-regular.eot'); /* IE9 Compat Modes */
+	  src: local(''),
+	       url('assets/fonts/raleway-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       url('assets/fonts/raleway-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('assets/fonts/raleway-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+	       url('assets/fonts/raleway-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	       url('assets/fonts/raleway-v22-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+	}
+
+    .text-block h2 {
+        font-size:24pt;
+        font-weight: bold;
+	    font-family: "Raleway";
+	    color: #fff952;
+    }
+
+	.text-block p {
+	    text-align: center;
+	    font-size: 18pt;
+	    font-family: "Raleway";
+	    color: white;
+	    top: 50%;
+        left: 50%;
+	}	
+
+	.list-block {
+	    border: 3px solid #fff952;
+	    border-radius:10%;
+        display: block;
+	}
+
+	.list-block li {
+	    text-align: center;
+	    font-size: 18pt;
+	    font-family: "Raleway";
+	    color: white;
+        margin-bottom: 5pt;	    
+	}
+
+	.list-block p {
+	    text-align: center;
+	    font-size: 18pt;
+	    font-family: "Raleway";
+	    color: white;
+        margin-bottom: 5pt;	    
+	}
+
+	ul {
+	  list-style: none;
+	  text-align: left;
+	}
+	
+	ul li:before {
+	  content: '✓';
+	}
+
+    a.button2{
+        display:inline-block;
+        padding:0.5em 3em;
+        border:0.16em solid #FFF952;
+        margin:0 0.3em 0.3em 0;
+        box-sizing: border-box;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-family:'Roboto',sans-serif;
+        font-weight:400;
+        color:#FFF952;
+        text-align:center;
+        transition: all 0.15s;
+    }
+
+    a.button2:hover{
+        color:#FFFFFF;
+        border-color:#FFFFFF;
+    }
+    a.button2:active{
+        color:#FFFFFF;
+        border-color:#FFFFFF;
+    }
+    @media all and (max-width:30em){
+        a.button2{
+            display:block;
+            margin:0.4em auto;
+        }
+    }
+
+    a {
+        color:#FFF952;
+    }
+    
+    a:active {
+        color:#FFFFFF;
+    }
+
    </style>
 </head>
 <body>
   <br /><br /><br /><br /><br />
   <div class="img-container-block">
-    <img src="DIVD.club.logo.png" alt="DIVD.club">
+    <img src="DIVD.club.logo.png"  alt="DIVD.club">
   </div>
+  <br><br>
+  <div class="text-block">
+    <h2>Welkom!</h2>
+    <p>Goed dat je er bent! De DIVD club is een plek waar jongens 
+        en meisjes samen kunnen leren over computerbeveiliging, hacking, 
+        het verbeteren van de (internet-)wereld en véél meer!<br></p>
+
+  <div class="list-block">
+  <p>Ben jij geïnteresseerd in…</p>
+        <ul>
+        <li> Hoe cybercriminelen steeds weer in weten te breken?</li>
+        <li> Hoe je jezelf tegen deze mensen moet verdedigen?</li>
+        <li> Hoe jij kan bijdragen aan een veiligere wereld?</li>
+        </ul>
+  </div>
+
+  </div>
+
+
+  <div class="text-block">      
+  <p>...of ben je gewoon geïnteresseerd in cyber security en wil je een keer een kijkje komen nemen? 
+  Kom gerust een keer met ons praten in onze Discord of Slack kanalen. Wij leren je met alle plezier 
+  hoe jij jezelf digitaal kan verdedigen en hoe jij zelf kan beginnen met bijdragen aan de reis naar 
+  een veiliger internet! Klik hieronder op de inschrijfknop en hopelijk zien we je daar! <br><br>Let op; als 
+  je jonger bent dan 18 moet je eerst toestemming vragen aan je ouders!</p><br>
+
+    <a href="something" class="button2">Kom erbij!</a>
+  
+  </div><br>
+  
+  
+  <div class="text-block">
+  <h2>Voor ouders</h2>
+  <p>Het <a href="divd.nl">DIVD (Dutch Institute for Vulnerability Disclosure)</a> is een groep vrijwilligers die zich inzet 
+  voor een veiliger internet. Naast het doen van beveiligingsonderzoek vinden wij het belangrijk dat er 
+  tijd wordt besteed aan zowel het opleiden en begeleiden van de volgende generatie hackers als het 
+  opvangen van de risicogroep jongeren die een veilige plek nodig hebben om te leren. <br><br>
+  
+  Bij de DIVD club kunnen jongeren terecht voor leerpaden, vragen en begeleiding in het thema 
+  van computerbeveiliging. Dit wordt geleid door ervaren professionals in de cyber security branche 
+  welke beschikbaar zijn voor de jongeren als zij uitleg of sturing nodig hebben. <br><br>
+  
+  Het DIVD werkt nauw samen met organisaties als het <a href="ncsc.nl">Nationaal Cyber Security Centrum (NCSC)</a>, 
+  het <a href="https://www.digitaltrustcenter.nl">Digital Trust Center (DTC)</a> en initiatieven als <a href="https://www.reclassering.nl/actueel/verhalen/hack_right-gericht-op-recidivevermindering-bij-jonge-hackers">Hack_Right</a>. <br><br>
+  
+  Voor vragen over de DIVD club kunt u ons bereiken via <a href="mailto:info@divd.club">info@divd.club</a>.
+  </p>
+  
 </body>
 </html>
