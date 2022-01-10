@@ -12,6 +12,9 @@ jobs:
             apk add rsync openssh sshpass;
             echo "set ftp:passive-mode true" > ~/.lftprc
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            1e:3b:f9:72:53:60:65:d2:c5:0b:60:7f:bb:b8:1d:0f
       - run:
           name: Upload
           command: |
