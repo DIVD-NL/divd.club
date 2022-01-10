@@ -1,33 +1,6 @@
 version: 2
 jobs:
 
-  build:
-    docker:
-      - image: mrseccubus/github-pages:latest
-    steps:
-      - run: (cd /root/;rm -rf project;mkdir project)
-      - checkout
-      - run:
-          name: Build and check
-          command: |
-            for site in www.divd.nl csirt.divd.nl; do
-              ( 
-                echo "*** Building and checking $site ***"; 
-                cd $site;
-                gem install jekyll-secinfo
-                ./update.sh
-                jekyll build 2>&1|grep -v 'warning:';
-                ./proof_html.sh 
-              ) 
-            done
-      - save_cache:
-          key: jekyll-{{ .Environment.CIRCLE_SHA1 }}
-          paths:
-            - "/root/project/www.divd.nl/_site"
-            - "/root/project/csirt.divd.nl/_site"
-            - "/root/project/.htaccess"
-
-
   upload:
     docker:
       - image: alpine:latest
@@ -50,15 +23,7 @@ jobs:
 workflows:
   version: 2
   build_and_upload:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - never_ever_run_this
       - upload:
-          requires:
-            - build
           filters:
             branches:
               only:
