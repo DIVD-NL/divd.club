@@ -1,6 +1,0 @@
-.git/
-.circleci/
-.gitignore
-CNAME
-*.md
-rsync-exclude.txt
