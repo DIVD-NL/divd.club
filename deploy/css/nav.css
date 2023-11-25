@@ -70,9 +70,9 @@ header{
 
 @media(min-width: 862px){
     .menu li a {
-        background-color: yellow; 
-        color: rgb(0, 0, 0); 
-        padding: 10px;
+        /* background-color: yellow;  */
+        color: yellow; 
+        padding: 1px;
         margin: 5px;
     }
 }
