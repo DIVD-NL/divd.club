@@ -218,3 +218,11 @@ left: 0;
     }
 }
 
+.grey-out {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .grey-out:hover {
+    filter: grayscale(0%);
+  }
